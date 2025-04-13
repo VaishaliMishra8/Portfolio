@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+      
+  
+        <section id="photo" class="photo">
+            <div class="photo-content">
+              <img src="myphoto.jpeg" alt="Your Photo" class="photos" />
+            </div>
+          </section>
+          <section id="hero" class="hero">
+        <h2>Hello, I'm <span>Vaishali Mishra</span></h2>
+        <p>A creative Frontend Developer</p>
+        <button class="btn" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">See My Work</button>
+      </section>
+  
+      <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I am a passionate frontend developer who loves turning designs into interactive and modern websites. I keep learning new technologies to make the web more beautiful and functional.
+        </p>
+      </section>
+  
+      <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-list">
+          <div class="project-card">
+            <h3>Weather App</h3>
+            <p>Built using HTML, CSS, and JavaScript. It shows live weather using OpenWeather API.</p>
+          </div>
+          <div class="project-card">
+            <h3>To-Do List</h3>
+            <p>A dynamic to-do app with local storage support. Built for productivity.</p>
+          </div>
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This portfolio you're viewing right now! Made with love and responsiveness.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="form-status"></p>
+      </section>
+  
+      <footer>
+        <p>&copy; 2025 Vaishali Mishra. All rights reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
