@@ -5,35 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">MyPortfolio</div>
+        <div class="logo">Portfolio</div>
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </header>
       
-  
-        <section id="photo" class="photo">
-            <div class="photo-content">
-              <img src="myphoto.jpeg" alt="Your Photo" class="photos" />
-            </div>
-          </section>
-          <section id="hero" class="hero">
-        <h2>Hello, I'm <span>Vaishali Mishra</span></h2>
-        <p>A creative Frontend Developer</p>
-        <button class="btn" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">See My Work</button>
-      </section>
+      <section id="hero" class="hero">
+        <h2>Hello, It's Me</h2><span>Vaishali Mishra</span>
+        <h3>And I'm <span class="text">Frontend Developer</span></h3> <br>
+        <p>I'm a creative web designer,<br> expertise is to create and Website design. Frontend Design and many more...</p>
+        <div class="photo-content" style="float: right; margin-top: -25%; margin-right: 10%;">
+          <img src="myphoto.jpeg" alt="Your Photo" class="photos" />
+      </div>
+    </section>
+
+    <section class="icon"> 
+      <a href="https://www.linkedin.com/in/vaishali-mishra-704272323/" target="_blank">
+        <i class="fab fa-linkedin fa-2x" style="color: #0e76a8"></i>
+      </a> 
+
+      <a href="https://github.com/VaishaliMishra8" target="_blank">
+        <i class="fab fa-github fa-2x" style="color: #333;"></i>
+      </a>
+    </section>
   
       <section id="about" class="about">
         <h2 class="section-title">About Me</h2>
-        <p>
-          I am a passionate frontend developer who loves turning designs into interactive and modern websites. I keep learning new technologies to make the web more beautiful and functional.
-        </p>
+        <h3 class="section-title" style="color: whitesmoke; font-weight: bolder;">Frontend Developer!</h3>
+        <div class="photo-content" style="float: right; margin-top: 4%; margin-right: 60%;">
+          <img src="myphoto.jpeg" alt="Your Photo" class="photos" />
+      </div>
+      <p>
+        I'm a passionate frontend developer with a strong interest in creating clean, user-friendly web interfaces. I enjoy bringing designs to life using HTML, CSS, and JavaScript, and I'm continuously learning new tools and frameworks to enhance my skills.<br><br> Alongside frontend development, I also have a basic understanding of programming languages like Python and Java, which helps me approach problems with a logical mindset and build better interactive features. I'm eager to grow as a developer and take on exciting projects that challenge my creativity and coding skills.
+
+
+      </p>
+      </section>
+
+      <h2 class="section-title">My Skills</h2>
+      <section id="Skills" class="skills">
+        <div class="container1" id="skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div id="technical-bars" class="technical-bars">
+          <div class="bar"><img src="Logos/html5-logo-24 (2).png" alt="">
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progess-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar"><img src="Logos/css3-logo-24.png" alt="">
+            <div class="info">
+              <span>CSS</span>
+            </div>
+            <div class="progess-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar"><img src="Logos/javascript-logo-24.png" alt="">
+            <div class="info">
+              <span>JavaScript</span>
+            </div>
+            <div class="progess-line JavaScript">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar"><img src="Logos/python-logo-24.png" alt="">
+            <div class="info">
+              <span>Python</span>
+            </div>
+            <div class="progess-line python">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar"><img src="Logos/react-logo-24 (1).png" alt="">
+            <div class="info">
+              <span>React</span>
+            </div>
+            <div class="progess-line react">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container1">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bars">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r='80'></circle>
+            <circle class="path path-1" cx="100" cy="100" r='80'></circle>
+          </svg>
+          <div class="percentage">75%</div>
+          <div class="text">Problem Solving</div>
+        </div>
+        <div class="radial-bars">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r='80'></circle>
+            <circle class="path path-1" cx="100" cy="100" r='80'></circle>
+          </svg>
+          <div class="percentage">60%</div>
+          <div class="text">Communication</div>
+        </div>
+        <div class="radial-bars">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r='80'></circle>
+            <circle class="path path-1" cx="100" cy="100" r='80'></circle>
+          </svg>
+          <div class="percentage">90%</div>
+          <div class="text">Team Work</div>
+        </div>
+        <div class="radial-bars">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r='80'></circle>
+            <circle class="path path-1" cx="100" cy="100" r='80'></circle>
+          </svg>
+          <div class="percentage">85%</div>
+          <div class="text">creativity</div>
+        </div>
+      </div>
       </section>
   
       <section id="projects" class="projects">
