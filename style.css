@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -83,7 +84,7 @@
     transform: translateY(-280px);
   }
 
-  .projects, .contact {
+  .projects, .contact, .skill {
     background-color: #1e293b;
     border-radius: 16px;
     margin: 2rem auto;
@@ -166,7 +167,7 @@
 
   .text {
     opacity: 0;
-    transform: translateX(-100px); /* Start 100px left */
+    transform: translateX(-100px); 
     animation: slideIn 1s ease-out forwards;
     color: #0ea5e9;
   }
@@ -174,7 +175,7 @@
   @keyframes slideIn {
     to {
       opacity: 1;
-      transform: translateX(0); /* Come to original position */
+      transform: translateX(0);
     }
   }
 
@@ -198,69 +199,61 @@
     box-shadow: 0 4px 10px rgba(248, 251, 251, 0.2);
   }
 
-  .skills{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .container1{
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
-  }
-  .heading1{
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
-  }
-  .bar{
-    font-size: 23px;
-  }
+ 
 
-  .technical-bars .bar{
-    margin-top: 40px 0;
-  }
-  .technical-bars .bar:first-child{
-    margin-top: 0;
-  }
-  .technical-bars .bar:last-child{
-    margin-bottom: 0;
-  }
-  .technical-bars .bar .info{
-    margin-bottom: 5px;
-  }
-  .technical-bars .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5 1s linear forwards;
-    opacity: 0;
-  }
-  .technical-bars .bar .progess-line{
-    position: relative;
-    border-radius: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: #000000;
-    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  @keyframes animate{
-    100%{
-      transform: scaleX(1);
-    }
-  }
-  .technical-bars.bar.progess-line span{
-    height: 100%;
-    background-color: #0ef;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  .progess-line.html span{
-    width: 90%;
-  }
+#skill{
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 2rem;
+}
+
+.skills{
+  display: flex;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+  background-color: #334155;
+  width: 1000px;
+  border-radius: 12px;
+  margin-left: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2);
+}
+
+.category-title {
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.skill-list {
+  list-style: none;
+  margin-left: 25px;
+}
+
+.skill-item {
+  align-items: center;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.skill-name {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+
+.fa-brands{
+  font-size: 1.2rem;
+  color: #f7f7f5; 
+  margin-left: 10px;
+}
+
+
+
+
